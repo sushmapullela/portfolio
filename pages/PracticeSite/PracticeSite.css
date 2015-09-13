@@ -1,0 +1,86 @@
+<style>
+#section1{
+    position:relative;
+    width: 300px;
+    height: 100px;
+    }
+#section1 img {
+    position: relative;
+    width:  200px;
+    height: 200px;
+    margin: 30px;
+}
+#header1{
+    position:relative;
+    background-color:white;
+    color:black;
+}
+#login a{
+    position:relative;
+    display:inline;
+    float:right;
+}
+#tabs1{
+    position: relative;
+    background-color:white;
+    margin:10px;
+}
+#tabs1 a{
+    position:relative;
+    display:inline-block;
+    float:right;
+    text-align:center;
+    border-radius: 5px 5px 0px 0px;
+    background: slategray;
+    width: 160px;
+    height: 26px; 
+    margin:10px;
+}
+#header2 {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    }
+#nav {
+    line-height:25px;
+    height:610px;
+    width:150px;
+    float:left;
+    padding:5px; 
+    border-right-style:solid;
+    border-right-color: solid black;
+    }
+#nav h3{
+    background-color: darkgray;
+    background-size: 10px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+    }
+#footer {
+    clear:both;
+    text-align:center;
+    padding:5px; 
+    border-top-color: solid black;
+    border-top-style: solid;
+    }
+#para1{
+    height:100px;
+    width: 450px;
+    padding:10px;
+    float:left;
+    border:3px solid black;
+    margin:25px;
+}
+#para2{
+    height:100px;
+    width: 450px;
+    padding:10px;
+    float:left;
+    border: 3px solid black;
+    margin:25px;
+}
+</style>

@@ -1,0 +1,76 @@
+<html>
+   
+   <head>
+      <title>Sushma_Practice</title>
+      
+      <script type="text/javascript">
+         function validateForm()
+      {
+      
+         if( document.SushmaForm.Name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.SushmaForm.Name.focus() ;
+            return false;
+         }
+         
+         if( document.SushmaForm.EMail.value == "" )
+         {
+            alert( "Please provide a valid email" );
+            document.SushmaForm.EMail.focus() ;
+            return false;
+         }
+         
+         if( document.SushmaForm.Zip.value == "" ||
+         isNaN( document.SushmaForm.Zip.value ) ||
+         document.SushmaForm.Zip.value.length != 5 )
+         {
+            alert( "Please enter 5 number zip code" );
+            document.SushmaForm.Zip.focus() ;
+            return false;
+         }
+         
+         if( document.SushmaForm.Country.value == "-1" )
+         {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+      </script>
+      
+   </head>
+   
+   <body>
+      <form action="/cgi-bin/test.cgi" align="center" name="SushmaForm" onsubmit="return(validate());">
+          <div>  
+            Name
+               <input type="text" name="Name" />
+         </div>
+         <div>
+            Email
+               <input type="text" name="EMail" />
+         </div>
+         <div>
+            Zip
+               <input type="text" name="Zip" />
+         </div>
+         <div>
+            Branch
+                  <select name="Branch">
+                     <option value="-1" selected>[choose yours]</option>
+                     <option value="1">Computer Science</option>
+                     <option value="2">Electrical</option>
+                     <option value="3">Electronics</option>
+                     <option value="4">Mechanical</option>
+                  </select>
+         </div>
+         <div>
+               <td align="right"></td>
+               <td><input type="submit" value="Submit" /></td>
+            </tr>
+         </div>
+      </form>
+      
+   </body>
+</html>

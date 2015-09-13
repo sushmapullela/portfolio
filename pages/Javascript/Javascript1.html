@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>EventsPractice1</title>
+</head>
+<body>
+	
+	<h1 align="center">Student Request Form</h1>
+	
+	<form method="POST" align="center" name="request1" onsubmit="formValidate();">
+		
+
+		Enter Full Name<input type="text" name="fn" id="Name"> <br> <br>
+		Enter Student ID<input type="text" name="sid" id="sid"> <br> <br>
+		Type of Request <select>
+		<option value="CPT application" name="appn">CPT application</option>
+		<option value="OPT">OPT application</option>
+		<option value="grader">TA/Grader application</option>
+		<option value="bus">Bus pass application</option>
+		<option value="fin">Financial Details</option>
+		<option value="vol">Volunteer Services</option>
+
+		</select> <br> <br>
+		<input type="submit" value="Submit" name="submit1"> <br> <br>
+
+		<a href="http://npuosc.npu.edu" onClick="return Ex1()">Go to college main page</a>
+		
+	</form>
+	<script type="text/javascript">
+
+	function formValidate()
+	{
+
+
+		var name=document.request1.fn;
+		var stid=document.request1.sid;
+		var appn=document.request1.appn;
+
+
+		var letters = /^[A-Za-z]+$/;  
+		if(name.value.match(letters))  
+		{  
+		return true;  
+		}  
+		else  
+		{  
+		alert('Username must have alphabet characters only');  
+		name.focus();  
+		return false;  
+		}  
+ 	
+
+ 		var numbers = /^[0-9]+$/;  
+		if(stid.value.match(numbers))  
+		{  
+		return true;  
+		}  
+		else  
+		{  
+		alert('ZIP code must have numeric characters only');  
+		stid.focus();  
+		return false;  
+		}  
+
+	}	
+
+	function Ex1(evt)
+	{
+		evt.preventDefault();
+		return confirm("Please review your information once again!")
+	}
+	</script>
+
+</body>
+</html>

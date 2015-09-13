@@ -1,0 +1,168 @@
+#projectmenu,
+#projectmenu ul,
+#projectmenu li,
+#projectmenu a {
+  border: none;
+  position:relative;
+  float:left;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  /*background-color: #585858;*/
+}
+#projectmenu {
+  height: 15px;
+  display: inline-block;
+  /*border-radius: 5px;*/
+  width: 650px;
+  margin: 0;
+  padding: 0;
+  /*opacity: 0.4;*/
+}
+#projectmenu > ul {
+  list-style: inside none;
+  margin: 0;
+  padding: 0;
+}
+#projectmenu > ul > li {
+  list-style: inside none;
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#projectmenu.align-center > ul {
+  text-align: center;
+}
+#projectmenu.align-center > ul > li {
+  float: none;
+  margin-left: -3px;
+}
+#projectmenu.align-center ul ul {
+  text-align: left;
+}
+#projectmenu.align-center > ul > li:first-child > a {
+  border-radius: 0;
+}
+#projectmenu > ul > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  padding: 12px 20px;
+}
+#projectmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 5px;
+}
+#projectmenu > ul > li > a:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -2px;
+  z-index: 99;
+  border-color: #3c3c3c;
+}
+#projectmenu ul li.has-sub:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+#projectmenu > ul > li.has-sub > a:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+#projectmenu > ul > li.has-sub:hover > a:before {
+  top: 19px;
+}
+#projectmenu > ul > li.has-sub:hover > a {
+  padding-bottom: 14px;
+  z-index: 999;
+  border-color: #3f3f3f;
+}
+#projectmenu ul li.has-sub:hover > ul,
+#projectmenu ul li.has-sub:hover > div {
+  display: block;
+}
+#projectmenu > ul > li.has-sub > a:hover,
+#projectmenu > ul > li.has-sub:hover > a {
+  background: #3f3f3f;
+  border-color: #3f3f3f;
+}
+#projectmenu ul li > ul,
+#projectmenu ul li > div {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 38px;
+  background: #3f3f3f;
+  /*border-radius: 0 0 5px 5px;*/
+  z-index: 999;
+  padding: 10px 0;
+}
+#projectmenu ul li > ul {
+  width: 200px;
+}
+#projectmenu ul ul ul {
+  position: absolute;
+}
+#projectmenu ul ul li:hover > ul {
+  left: 100%;
+  top: -10px;
+  border-radius: 5px;
+}
+#projectmenu ul li > ul li {
+  display: block;
+  list-style: inside none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#projectmenu ul li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+#projectmenu,
+#projectmenu ul ul > li:hover > a,
+#projectmenu ul ul li a:hover {
+  background: transparent;
+  }
+#projectmenu > ul > li > a:hover {
+  background: #080808;
+  color: #ffffff;
+}
+#projectmenu ul ul a:hover {
+  color: #ffffff;
+}
+#projectmenu > ul > li.has-sub > a:hover:before {
+  position:relative;
+  border-top: 5px solid #ffffff;
+}
+#aboutme{
+  width:650px;
+  height:390px;
+  position:relative;
+}
+#curricular tr, td{
+     border: 3px solid black;
+     color:#000000;
+
+}

@@ -1,0 +1,56 @@
+#body{
+  background: linear-gradient(red, blue); 
+}
+#welcome{
+	position: relative;
+	display:block;
+	text-align: center;
+	margin:30px;
+	border-color: solid black;
+	border-style:solid;
+}
+
+#animate1{
+  position:absolute;
+  left:50px;
+  width:150px;
+  height:150px;
+  margin:5px;
+  border-color:solid black;
+}
+#animate2{
+	position:absolute;
+	float:right;
+	right:50px;
+	width:150px;
+	height:150px;
+	border-color:solid black;
+}
+
+.animate2 {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.card {
+  width:150px;
+  height: 150px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 150px;
+  position: absolute;
+  width: 150px;
+}
+.card .back {
+	width:150px;
+	height:150px;
+  transform: rotateY(180deg);
+}

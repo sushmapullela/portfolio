@@ -1,0 +1,94 @@
+<style>
+body{
+    background: url('images/starlight1.JPG');
+    background-size: cover;
+}
+
+#section1{
+    position:relative;
+    width: 300px;
+    height: 100px;
+    border-style:solid;
+    border-color: solid black;
+    }
+#section1 img {
+    position: relative;
+    width:  200px;
+    height: 200px;
+    margin: 30px;
+}
+#header1{
+    position:relative;
+    background-color:palevioletred;
+    text-align:center;
+    height:100px;
+    border-style:solid;
+    border-color: solid black;
+}
+/*#login a{
+    position:relative;
+    display:inline;
+    float:right;
+}
+#tabs1{
+    position: relative;
+    background-color:palevioletred;
+    margin:10px;
+}*/
+#tabs1 a{
+    position:relative;
+    display:inline-block;
+    float:left;
+    text-align:center;
+    border-radius: 10px 10px 10px 10px;
+    background: palevioletred;
+    width:120px;
+    height:26px; 
+    margin:2px;
+    
+    1
+}
+#header2 {
+    position:relative;
+    background-color:palevioletred;
+    text-align:center;
+    padding:5px;
+    margin:2px;
+    
+    }
+#nav {
+    line-height:25px;
+    height:610px;
+    width:150px;
+    float:left;
+    padding:5px; 
+    border-style:solid;
+    border-color: solid black;
+    }
+#nav h3{
+    background-color: palevioletred;
+    background-size: 10px;
+}
+#section {
+    width:400px;
+    float:left;
+    padding:10px; 
+    }
+#footer {
+    clear:both;
+    text-align:center;
+    padding:5px; 
+    border-top-color: solid black;
+    border-top-style: solid;
+    }
+#para1{
+    
+    float:left;
+   
+}
+#para2{
+    
+    float:left;
+    
+}
+</style>

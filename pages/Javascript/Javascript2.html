@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+	<title>String and Array operations</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var name=[];
+		var word;
+
+		function reverseName(name)
+		{
+			var reversed;
+  			reversed = name.split("").reverse().join("");
+			alert("The reversed name is:" +reversed);
+
+			if(reversed==name)
+			{
+				alert("Entered name: " +name + " is a palindrome");
+			}
+			else
+			{
+				alert("Entered name: " +name+  " is not a palindrome");
+			}
+		}
+		console.log(reverseName("sushma"));
+
+		function descSort()
+		{
+			var points = [1,2,20,3,40,5,6,70,90,99];
+			points.sort(function(a, b){return b-a});
+			alert("Entered numbers in descending order:" +points);
+		}
+		console.log(descSort());
+	</script>
+
+</body>
+</html>

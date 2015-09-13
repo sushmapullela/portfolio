@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Sushma_Angular</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="SiteStyle.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+
+	<body bgcolor="#F5F6CE">
+
+		<div id="header1">
+			<h1>Starlight Event Management</h1>
+			<h4>-Immortalizing your happiest moments</h4>
+		</div>
+			
+		<div id="tabs1" ng-app>
+			<nav class="{{active}}" ng-click="$event.preventDefault()"></nav>
+
+			<a ng-href="MainPage.html" class="home" ng-click="active='Home'">Home</a>
+			<a href="about.html" class="about" ng-click="active='About'">About</a>
+			<a href="contactus.html" class="contactus" ng-click="active='ContactUs'">Contact Us</a>
+			<a href="UserReviews.html" class="userreviews" ng-click="active='UserReviews'">User Reviews</a>
+
+			
+			<p ng-show="active">You chose <b>{{active}}</b></p>
+		</div>
+		<br>
+
+
+	<div id="header2">
+		<h1><a href="UserReviews.html">Read what our customers are saying!</h1></a>
+	</div>
+
+	<div id="nav">
+		<h3>Event</h3>
+		<a href="weddings.html">Weddings<br></a>
+		Baby Shower<br>
+		Birthday <br>
+		Graduation <br>
+		Sweet 16 <br>
+		Corporate Events <br>
+		<br>
+		<h3>Special Attractions</h3>
+		Mehendi (Henna Tattoo) <br>
+		Face and Body Painting <br>
+		Music and Dance <br>
+		Specialty Food Stalls <br>
+		Special Acts <br>
+		Keepsakes<br> 
+
+	</div>
+
+	<div id="section1">
+		<h2>Planning an event? You have come to the right place!</h2>
+		<p id="para">
+			Our Motto: "Every occasion calls for a celebration!"
+			<br>
+			Our Mission: "To ensure utmost customer satisfaction and fun!"
+		</p>
+			<a href="weddings.html">
+				<img src="img/wedding.jpg">
+			</a>
+			<img src="img/bby.jpg">
+			<img src="img/bday.jpg">
+			<img src="img/sweet16.jpg">
+		<div id="para1">
+			<p>
+				
+
+			</p>
+
+		</div>
+		<div id="para2">
+			<p>
+				
+			</p>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div>
+		home | contact | about us | sitemap | stores | feedback
+		</div>
+		Copyright © Starlight.com
+	</div>
+
+	</body>
+
+</html>

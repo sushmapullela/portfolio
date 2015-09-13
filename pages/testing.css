@@ -1,0 +1,63 @@
+body {
+
+  background-image:url("../images/sunset2.jpg"); ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #585858;
+}
+#aboutme,#contact,#resume{
+    text-align: center;
+}
+
+#header{
+    position:relative;
+    text-align: center;
+    height: 80px;
+    /*border:solid;
+    border-color: solid black;*/
+}
+#header h1{
+    text-align: center;
+}
+
+#explanation{
+    position:relative;
+    text-align: center;
+    height:100px;
+    margin:10px;
+    float:center;
+}
+
+#description{
+    position:relative;
+    height:400px;
+    width:600px;
+    float:left;
+    /*line-height: 400%;
+    border:solid;
+    border-color: solid black;*/
+    text-align: center;
+}
+#description p{
+    text-align: left;
+    line-height:1;
+    float: left;
+}
+
+/*#description details{
+    position:relative;
+    text-align: left;
+    line-height:1;
+
+}*/
+
+
+#footer {
+    position:relative;
+    clear:both;
+    }
+#footer a{
+    color: #ffffff;
+    background-color: #585858;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sue's Sports Shop</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+	<div id="welcome">
+		<h1>Welcome to Sue's Sports Shop</h1>
+		<marquee behavior="alternate" width=500px><h2>Let's play!!!</h2></marquee> 
+
+	</div>
+
+	<div id="bodyContent">
+		
+		<button type="button" id="left">Reset</button>
+			Move the ball to the hoop! 
+		<button type="button" id="right">Play</button>
+		<div id="animate1" class="block">
+			<img src="images/basketball.jpg" width="150" height="150">
+		</div>
+		<div id="animate2">
+			
+			  <div class="card">
+			    <div class="side"><img src="images/hoop.jpg"></div>
+			    <div class="sideback"><img src="images/dunk.jpg" height=200px width=200px></div>
+			  </div>
+			</div>
+		</div>
+
+			<script>
+				$("#right").click(function(){
+				  $(".block").animate({"left": "+=1020px"}, "slow");
+				});
+
+				$("#left").click(function(){
+				  $(".block").animate({"left": "-=1020px"}, "slow");
+				});
+
+			 </script>
+
+	</div>
+
+
+</body>
+</html>
